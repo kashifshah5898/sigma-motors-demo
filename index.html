@@ -195,7 +195,7 @@
                     class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-200"
                     data-section="staff">
                     <i class="fas fa-user-tie w-5"></i>
-                    <span class="font-medium">Staff</span>
+                    <span class="font-medium">User</span>
                 </a>
                 <a href="#"
                     class="nav-link flex items-center space-x-3 px-4 py-3 rounded-lg text-gray-300 hover:bg-white/10 hover:text-white transition-all duration-200"
@@ -231,6 +231,16 @@
                 <div class="px-8 py-5 flex items-center justify-between">
                     <h2 id="page-title" class="text-2xl font-bold text-gray-800">Dashboard & Business Analytics</h2>
                     <div class="flex items-center space-x-6">
+                        <div class="flex items-center space-x-2">
+                            <label class="text-sm font-medium text-gray-700">Location:</label>
+                            <select
+                                class="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white text-sm font-medium text-gray-800">
+                                <option value="all">All</option>
+                                <option value="karachi">Karachi</option>
+                                <option value="lahore">Lahore</option>
+                                <option value="islamabad">Islamabad</option>
+                            </select>
+                        </div>
                         <div class="relative cursor-pointer">
                             <i class="fas fa-bell text-gray-600 text-xl"></i>
                             <span
@@ -327,6 +337,153 @@
                         </div>
                     </div>
 
+                    <!-- Top 10 Products from Inventory -->
+                    <div class="bg-white rounded-2xl shadow-lg p-6 mb-8 border border-gray-100">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-lg font-bold text-gray-800">Top 10 Products Used from Inventory</h3>
+                            <div class="flex space-x-2">
+                                <button
+                                    class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition">This
+                                    Week</button>
+                                <button
+                                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">This
+                                    Month</button>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <!-- Product 1 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Engine Oil 5W-30</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 95%">
+                                            <span class="text-xs font-semibold text-white">142</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">142 units</div>
+                            </div>
+                            <!-- Product 2 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Oil Filter</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-green-500 to-green-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 88%">
+                                            <span class="text-xs font-semibold text-white">132</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">132 units</div>
+                            </div>
+                            <!-- Product 3 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Brake Pads</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-purple-500 to-purple-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 75%">
+                                            <span class="text-xs font-semibold text-white">112</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">112 units</div>
+                            </div>
+                            <!-- Product 4 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Air Filter</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-orange-500 to-orange-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 68%">
+                                            <span class="text-xs font-semibold text-white">102</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">102 units</div>
+                            </div>
+                            <!-- Product 5 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Spark Plugs</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-red-500 to-red-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 62%">
+                                            <span class="text-xs font-semibold text-white">93</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">93 units</div>
+                            </div>
+                            <!-- Product 6 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Battery</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-indigo-500 to-indigo-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 55%">
+                                            <span class="text-xs font-semibold text-white">82</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">82 units</div>
+                            </div>
+                            <!-- Product 7 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Wiper Blades</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-teal-500 to-teal-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 48%">
+                                            <span class="text-xs font-semibold text-white">72</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">72 units</div>
+                            </div>
+                            <!-- Product 8 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Brake Fluid</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-pink-500 to-pink-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 42%">
+                                            <span class="text-xs font-semibold text-white">63</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">63 units</div>
+                            </div>
+                            <!-- Product 9 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Coolant</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-cyan-500 to-cyan-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 38%">
+                                            <span class="text-xs font-semibold text-white">57</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">57 units</div>
+                            </div>
+                            <!-- Product 10 -->
+                            <div class="flex items-center">
+                                <div class="w-32 text-sm font-medium text-gray-800">Fuel Filter</div>
+                                <div class="flex-1 mx-4">
+                                    <div class="w-full bg-gray-200 rounded-full h-6 relative">
+                                        <div class="bg-gradient-to-r from-amber-500 to-amber-600 h-6 rounded-full flex items-center justify-end pr-2"
+                                            style="width: 32%">
+                                            <span class="text-xs font-semibold text-white">48</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-24 text-right text-sm font-semibold text-gray-800">48 units</div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Job Status Table -->
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                         <div class="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
@@ -415,6 +572,152 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+
+                    <!-- Location Performance -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8">
+                        <div
+                            class="px-6 py-4 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-indigo-50 to-purple-50">
+                            <h3 class="text-lg font-bold text-gray-800">Overall Performance by Location</h3>
+                            <div class="flex space-x-2">
+                                <button
+                                    class="px-4 py-2 text-sm font-medium text-gray-700 bg-gray-100 rounded-lg hover:bg-gray-200 transition">This
+                                    Week</button>
+                                <button
+                                    class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition">This
+                                    Month</button>
+                            </div>
+                        </div>
+                        <div class="p-6">
+                            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                                <!-- Karachi Location -->
+                                <div
+                                    class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-xl p-6 border border-blue-100">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h4 class="text-lg font-bold text-gray-800">Karachi</h4>
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-map-marker-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Total Revenue</span>
+                                            <span class="text-lg font-bold text-gray-800">Rs. 1,245,000</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Jobs Completed</span>
+                                            <span class="text-lg font-bold text-gray-800">142</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Active Jobs</span>
+                                            <span class="text-lg font-bold text-blue-600">18</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Customers</span>
+                                            <span class="text-lg font-bold text-gray-800">68</span>
+                                        </div>
+                                        <div class="pt-3 border-t border-blue-200">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm font-semibold text-gray-700">Performance</span>
+                                                <span
+                                                    class="px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">
+                                                    <i class="fas fa-arrow-up mr-1"></i>Excellent
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Lahore Location -->
+                                <div
+                                    class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-xl p-6 border border-green-100">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h4 class="text-lg font-bold text-gray-800">Lahore</h4>
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-green-500 to-emerald-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-map-marker-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Total Revenue</span>
+                                            <span class="text-lg font-bold text-gray-800">Rs. 985,000</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Jobs Completed</span>
+                                            <span class="text-lg font-bold text-gray-800">108</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Active Jobs</span>
+                                            <span class="text-lg font-bold text-green-600">12</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Customers</span>
+                                            <span class="text-lg font-bold text-gray-800">52</span>
+                                        </div>
+                                        <div class="pt-3 border-t border-green-200">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm font-semibold text-gray-700">Performance</span>
+                                                <span
+                                                    class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                    <i class="fas fa-arrow-up mr-1"></i>Good
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Islamabad Location -->
+                                <div
+                                    class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-xl p-6 border border-purple-100">
+                                    <div class="flex items-center justify-between mb-4">
+                                        <h4 class="text-lg font-bold text-gray-800">Islamabad</h4>
+                                        <div
+                                            class="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-600 rounded-lg flex items-center justify-center">
+                                            <i class="fas fa-map-marker-alt text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="space-y-4">
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Total Revenue</span>
+                                            <span class="text-lg font-bold text-gray-800">Rs. 720,000</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Jobs Completed</span>
+                                            <span class="text-lg font-bold text-gray-800">85</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Active Jobs</span>
+                                            <span class="text-lg font-bold text-purple-600">9</span>
+                                        </div>
+                                        <div class="flex justify-between items-center">
+                                            <span class="text-sm text-gray-600">Customers</span>
+                                            <span class="text-lg font-bold text-gray-800">38</span>
+                                        </div>
+                                        <div class="pt-3 border-t border-purple-200">
+                                            <div class="flex items-center justify-between">
+                                                <span class="text-sm font-semibold text-gray-700">Performance</span>
+                                                <span
+                                                    class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">
+                                                    <i class="fas fa-arrow-up mr-1"></i>Good
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Location Comparison Chart -->
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <h4 class="text-md font-semibold text-gray-800 mb-4">Revenue Comparison</h4>
+                                <div
+                                    class="chart-placeholder h-64 rounded-xl flex items-center justify-center text-white">
+                                    <i class="fas fa-chart-bar mr-3 text-2xl"></i>
+                                    Location Performance Chart - Revenue, Jobs, Customers Comparison
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -559,78 +862,8 @@
                         </div>
                     </div>
 
-                    <!-- Cash Flow Statement -->
-                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8">
-                        <div class="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-purple-50 to-pink-50">
-                            <h3 class="text-lg font-bold text-gray-800">Cash Flow Statement (This Month)</h3>
-                        </div>
-                        <div class="p-6">
-                            <div class="space-y-4">
-                                <div>
-                                    <h4 class="font-semibold text-gray-700 mb-3">Operating Activities</h4>
-                                    <div class="pl-4 space-y-2">
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Cash from Sales</span>
-                                            <span class="text-green-600 font-semibold">+Rs. 2,360,800</span>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Cash Paid to Suppliers</span>
-                                            <span class="text-red-600 font-semibold">-Rs. 450,000</span>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Salaries Paid</span>
-                                            <span class="text-red-600 font-semibold">-Rs. 450,000</span>
-                                        </div>
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Other Operating Expenses</span>
-                                            <span class="text-red-600 font-semibold">-Rs. 335,800</span>
-                                        </div>
-                                        <div class="flex justify-between items-center pt-2 border-t border-gray-200">
-                                            <span class="text-gray-800 font-semibold">Net Operating Cash Flow</span>
-                                            <span class="text-blue-600 font-bold">Rs. 1,125,000</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="pt-4 border-t border-gray-200">
-                                    <h4 class="font-semibold text-gray-700 mb-3">Investing Activities</h4>
-                                    <div class="pl-4 space-y-2">
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Equipment Purchase</span>
-                                            <span class="text-red-600 font-semibold">-Rs. 150,000</span>
-                                        </div>
-                                        <div class="flex justify-between items-center pt-2 border-t border-gray-200">
-                                            <span class="text-gray-800 font-semibold">Net Investing Cash Flow</span>
-                                            <span class="text-red-600 font-bold">-Rs. 150,000</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="pt-4 border-t border-gray-200">
-                                    <h4 class="font-semibold text-gray-700 mb-3">Financing Activities</h4>
-                                    <div class="pl-4 space-y-2">
-                                        <div class="flex justify-between items-center">
-                                            <span class="text-gray-600">Loan Repayment</span>
-                                            <span class="text-red-600 font-semibold">-Rs. 850,000</span>
-                                        </div>
-                                        <div class="flex justify-between items-center pt-2 border-t border-gray-200">
-                                            <span class="text-gray-800 font-semibold">Net Financing Cash Flow</span>
-                                            <span class="text-red-600 font-bold">-Rs. 850,000</span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div
-                                    class="flex justify-between items-center py-4 border-t-2 border-gray-300 mt-6 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg px-4">
-                                    <span class="text-gray-800 font-bold text-lg">Net Change in Cash</span>
-                                    <span class="text-blue-600 font-bold text-2xl">Rs. 125,000</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                     <!-- Accounts Receivable & Payable -->
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="grid grid-cols-1 lg:grid-cols-1 gap-6 mb-8">
                         <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                             <div
                                 class="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-green-50 to-emerald-50">
@@ -671,44 +904,6 @@
                             </div>
                         </div>
 
-                        <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                            <div class="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-red-50 to-pink-50">
-                                <h3 class="text-lg font-bold text-gray-800">Accounts Payable</h3>
-                            </div>
-                            <div class="p-6">
-                                <div class="mb-4">
-                                    <div class="flex justify-between items-center mb-2">
-                                        <span class="text-gray-600">Total Payable</span>
-                                        <span class="text-xl font-bold text-gray-800">Rs. 57,500</span>
-                                    </div>
-                                    <div class="w-full bg-gray-200 rounded-full h-3">
-                                        <div class="bg-red-500 h-3 rounded-full" style="width: 45%"></div>
-                                    </div>
-                                </div>
-                                <div class="space-y-3">
-                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                                        <div>
-                                            <p class="font-medium text-gray-800">Auto Parts Distributors</p>
-                                            <p class="text-sm text-gray-500">PO-2025-012</p>
-                                        </div>
-                                        <div class="text-right">
-                                            <p class="font-semibold text-gray-800">Rs. 45,000</p>
-                                            <p class="text-xs text-yellow-600">Due in 5 days</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex justify-between items-center p-3 bg-gray-50 rounded-lg">
-                                        <div>
-                                            <p class="font-medium text-gray-800">Car Care Solutions</p>
-                                            <p class="text-sm text-gray-500">PO-2025-015</p>
-                                        </div>
-                                        <div class="text-right">
-                                            <p class="font-semibold text-gray-800">Rs. 12,500</p>
-                                            <p class="text-xs text-green-600">Due in 12 days</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
 
                     <!-- Financial Reports Actions -->
@@ -718,7 +913,7 @@
                             <button
                                 class="flex items-center justify-center space-x-2 px-6 py-4 bg-gradient-to-r from-blue-500 to-blue-600 text-white rounded-xl hover:from-blue-600 hover:to-blue-700 transition shadow-lg">
                                 <i class="fas fa-file-pdf"></i>
-                                <span class="font-semibold">Export P&L PDF</span>
+                                <span class="font-semibold">Export PDF</span>
                             </button>
                             <button
                                 class="flex items-center justify-center space-x-2 px-6 py-4 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-xl hover:from-green-600 hover:to-green-700 transition shadow-lg">
@@ -739,6 +934,52 @@
 
                 <!-- Customers Section -->
                 <div class="content-section animate-fade-in hidden" id="customers">
+                    <!-- Service Overdue Cards -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Overdue Service (>6 months)</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">12</h3>
+                            <div class="flex items-center text-sm text-red-600">
+                                <i class="fas fa-users mr-1"></i>
+                                <span>Customers need service</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Approaching 6 Months</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">8</h3>
+                            <div class="flex items-center text-sm text-orange-600">
+                                <i class="fas fa-calendar-alt mr-1"></i>
+                                <span>Service due soon</span>
+                            </div>
+                        </div>
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Total Customers</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-users text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">145</h3>
+                            <div class="flex items-center text-sm text-blue-600">
+                                <i class="fas fa-check-circle mr-1"></i>
+                                <span>Active customers</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8">
                         <div
                             class="px-6 py-4 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-blue-50 to-indigo-50">
@@ -788,12 +1029,24 @@
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex space-x-2">
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition"
+                                                    title="View">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition"
+                                                    title="Edit">
                                                     <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-green-500 hover:bg-green-50 rounded-lg transition"
+                                                    title="WhatsApp">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition"
+                                                    title="Email">
+                                                    <i class="fas fa-envelope"></i>
                                                 </button>
                                             </div>
                                         </td>
@@ -814,12 +1067,24 @@
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex space-x-2">
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition"
+                                                    title="View">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition"
+                                                    title="Edit">
                                                     <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-green-500 hover:bg-green-50 rounded-lg transition"
+                                                    title="WhatsApp">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition"
+                                                    title="Email">
+                                                    <i class="fas fa-envelope"></i>
                                                 </button>
                                             </div>
                                         </td>
@@ -839,12 +1104,24 @@
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex space-x-2">
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition"
+                                                    title="View">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition"
+                                                    title="Edit">
                                                     <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-green-500 hover:bg-green-50 rounded-lg transition"
+                                                    title="WhatsApp">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition"
+                                                    title="Email">
+                                                    <i class="fas fa-envelope"></i>
                                                 </button>
                                             </div>
                                         </td>
@@ -865,12 +1142,24 @@
                                         <td class="px-6 py-4 whitespace-nowrap">
                                             <div class="flex space-x-2">
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition"
+                                                    title="View">
                                                     <i class="fas fa-eye"></i>
                                                 </button>
                                                 <button
-                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition">
+                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition"
+                                                    title="Edit">
                                                     <i class="fas fa-edit"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-green-500 hover:bg-green-50 rounded-lg transition"
+                                                    title="WhatsApp">
+                                                    <i class="fab fa-whatsapp"></i>
+                                                </button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-blue-500 hover:bg-blue-50 rounded-lg transition"
+                                                    title="Email">
+                                                    <i class="fas fa-envelope"></i>
                                                 </button>
                                             </div>
                                         </td>
@@ -1407,6 +1696,117 @@
 
                 <!-- Job Cards Section -->
                 <div class="content-section animate-fade-in hidden" id="jobcards">
+                    <!-- Job Cards Stats & KPIs -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Active Job Cards</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-blue-400 to-blue-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-clipboard-list text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">15</h3>
+                            <div class="flex items-center text-sm text-blue-600">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>3 new today</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Completed Today</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-green-400 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-check-circle text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">8</h3>
+                            <div class="flex items-center text-sm text-green-600">
+                                <i class="fas fa-check mr-1"></i>
+                                <span>Rs. 95,400 total</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">In Progress</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">7</h3>
+                            <div class="flex items-center text-sm text-yellow-600">
+                                <i class="fas fa-spinner mr-1"></i>
+                                <span>Rs. 125,300 value</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Waiting for Parts</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-red-400 to-red-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-box-open text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">3</h3>
+                            <div class="flex items-center text-sm text-red-600">
+                                <i class="fas fa-exclamation-triangle mr-1"></i>
+                                <span>Requires attention</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional KPIs Row -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Avg. Completion Time</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-purple-400 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-hourglass-half text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">4.2</h3>
+                            <div class="flex items-center text-sm text-gray-600">
+                                <i class="fas fa-clock mr-1"></i>
+                                <span>Hours per job</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Total Active Value</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-indigo-400 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-dollar-sign text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">Rs. 220,700</h3>
+                            <div class="flex items-center text-sm text-indigo-600">
+                                <i class="fas fa-chart-line mr-1"></i>
+                                <span>In progress jobs</span>
+                            </div>
+                        </div>
+
+                        <div class="bg-white rounded-2xl shadow-lg p-6 stat-card-hover border border-gray-100">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="text-sm font-medium text-gray-600">Completion Rate</span>
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-teal-400 to-teal-600 rounded-xl flex items-center justify-center shadow-lg">
+                                    <i class="fas fa-percentage text-white"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-3xl font-bold text-gray-800 mb-2">87%</h3>
+                            <div class="flex items-center text-sm text-teal-600">
+                                <i class="fas fa-arrow-up mr-1"></i>
+                                <span>This month</span>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8">
                         <div
                             class="px-6 py-4 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-purple-50 to-pink-50">
@@ -2034,7 +2434,7 @@
                                     <tr class="hover:bg-gray-50 transition">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">27 Nov 2025</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Salaries</td>
-                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Staff Salary -
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">User Salary -
                                             November</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Rs. 75,000</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Bank Transfer</td>
@@ -2055,15 +2455,15 @@
                     </div>
                 </div>
 
-                <!-- Staff Section -->
+                <!-- User Section -->
                 <div class="content-section animate-fade-in hidden" id="staff">
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
                         <div
                             class="px-6 py-4 border-b border-gray-200 flex items-center justify-between bg-gradient-to-r from-indigo-50 to-purple-50">
-                            <h3 class="text-lg font-bold text-gray-800">Staff & Technician Management</h3>
+                            <h3 class="text-lg font-bold text-gray-800">User & Technician Management</h3>
                             <button
                                 class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold">
-                                <i class="fas fa-plus mr-2"></i>Add Staff
+                                <i class="fas fa-plus mr-2"></i>Add User
                             </button>
                         </div>
                         <div class="overflow-x-auto">
@@ -2071,13 +2471,15 @@
                                 <thead class="bg-gray-50">
                                     <tr>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
-                                            Staff ID</th>
+                                            User ID</th>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                                             Name</th>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                                             Role</th>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                                             Contact</th>
+                                        <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
+                                            Location</th>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
                                             Active Jobs</th>
                                         <th class="px-6 py-4 text-left text-xs font-semibold text-gray-600 uppercase">
@@ -2091,12 +2493,13 @@
                                 <tbody class="divide-y divide-gray-200">
                                     <tr class="hover:bg-gray-50 transition">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
-                                            STF-001</td>
+                                            USR-001</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Muhammad Ali</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Senior Technician
                                         </td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+92 300 5556677
                                         </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Karachi</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">3</td>
                                         <td class="px-6 py-4 whitespace-nowrap"><span
                                                 class="px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Excellent</span>
@@ -2117,12 +2520,39 @@
                                     </tr>
                                     <tr class="hover:bg-gray-50 transition">
                                         <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
-                                            STF-002</td>
+                                            USR-002</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Hassan Khan</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Technician</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+92 301 6667788
                                         </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Lahore</td>
                                         <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">2</td>
+                                        <td class="px-6 py-4 whitespace-nowrap"><span
+                                                class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">Good</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap"><span
+                                                class="px-3 py-1 text-xs font-semibold rounded-full bg-green-100 text-green-800">Active</span>
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap">
+                                            <div class="flex space-x-2">
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-blue-600 hover:bg-blue-50 rounded-lg transition"><i
+                                                        class="fas fa-eye"></i></button>
+                                                <button
+                                                    class="p-2 text-gray-600 hover:text-green-600 hover:bg-green-50 rounded-lg transition"><i
+                                                        class="fas fa-edit"></i></button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="hover:bg-gray-50 transition">
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800">
+                                            USR-003</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Ahmed Sheikh</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Cashier</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-600">+92 302 7778899
+                                        </td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">Islamabad</td>
+                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-800">N/A</td>
                                         <td class="px-6 py-4 whitespace-nowrap"><span
                                                 class="px-3 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">Good</span>
                                         </td>
@@ -2148,9 +2578,10 @@
 
                 <!-- Reports Section -->
                 <div class="content-section animate-fade-in hidden" id="reports">
+                    <!-- Report Generation Form -->
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 mb-8">
                         <h3 class="text-lg font-bold text-gray-800 mb-6">Generate Report</h3>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Report Type</label>
                                 <select
@@ -2161,6 +2592,9 @@
                                     <option>Technician Performance</option>
                                     <option>Customer Balance Summary</option>
                                     <option>Service History Report</option>
+                                    <option>Location Performance Report</option>
+                                    <option>Product Usage Report</option>
+                                    <option>Financial Summary Report</option>
                                 </select>
                             </div>
                             <div>
@@ -2174,21 +2608,61 @@
                                     <option>Custom Range</option>
                                 </select>
                             </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Location (Optional)</label>
+                                <select
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>All Locations</option>
+                                    <option>Karachi</option>
+                                    <option>Lahore</option>
+                                    <option>Islamabad</option>
+                                </select>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 mb-2">Format</label>
+                                <select
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>View in System</option>
+                                    <option>Export to Excel</option>
+                                    <option>Export to PDF</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="flex space-x-3">
+                        <div class="flex flex-wrap gap-3">
                             <button
-                                class="px-6 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold">
-                                Generate Report
+                                class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold shadow-lg">
+                                <i class="fas fa-chart-bar mr-2"></i>Generate Report
                             </button>
                             <button
-                                class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-semibold">
+                                class="px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition font-semibold shadow-lg">
                                 <i class="fas fa-file-excel mr-2"></i>Export to Excel
+                            </button>
+                            <button
+                                class="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg hover:from-red-600 hover:to-red-700 transition font-semibold shadow-lg">
+                                <i class="fas fa-file-pdf mr-2"></i>Export to PDF
+                            </button>
+                            <button
+                                class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-semibold">
+                                <i class="fas fa-print mr-2"></i>Print Report
                             </button>
                         </div>
                     </div>
-                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
-                        <div class="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-indigo-50">
+
+                    <!-- Report Display Section -->
+                    <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden mb-8">
+                        <div
+                            class="px-6 py-4 border-b border-gray-200 bg-gradient-to-r from-blue-50 to-indigo-50 flex items-center justify-between">
                             <h3 class="text-lg font-bold text-gray-800">Sales Report - November 2025</h3>
+                            <div class="flex space-x-2">
+                                <button
+                                    class="px-4 py-2 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition font-semibold text-sm shadow-lg">
+                                    <i class="fas fa-file-excel mr-2"></i>Export Excel
+                                </button>
+                                <button
+                                    class="px-4 py-2 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg hover:from-red-600 hover:to-red-700 transition font-semibold text-sm shadow-lg">
+                                    <i class="fas fa-file-pdf mr-2"></i>Export PDF
+                                </button>
+                            </div>
                         </div>
                         <div class="p-6">
                             <div
@@ -2253,6 +2727,48 @@
                                         </tr>
                                     </tbody>
                                 </table>
+                            </div>
+
+                            <!-- Report Summary -->
+                            <div class="mt-6 pt-6 border-t border-gray-200">
+                                <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <p class="text-sm text-gray-600 mb-1">Total Invoices</p>
+                                        <p class="text-2xl font-bold text-gray-800">45</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <p class="text-sm text-gray-600 mb-1">Total Revenue</p>
+                                        <p class="text-2xl font-bold text-gray-800">Rs. 895,400</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <p class="text-sm text-gray-600 mb-1">Services Revenue</p>
+                                        <p class="text-2xl font-bold text-gray-800">Rs. 625,000</p>
+                                    </div>
+                                    <div class="bg-gray-50 rounded-lg p-4">
+                                        <p class="text-sm text-gray-600 mb-1">Parts Revenue</p>
+                                        <p class="text-2xl font-bold text-gray-800">Rs. 270,400</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Export Actions Footer -->
+                            <div class="mt-6 pt-6 border-t border-gray-200 flex flex-wrap justify-center gap-4">
+                                <button
+                                    class="px-6 py-3 bg-gradient-to-r from-green-500 to-green-600 text-white rounded-lg hover:from-green-600 hover:to-green-700 transition font-semibold shadow-lg">
+                                    <i class="fas fa-file-excel mr-2"></i>Export to Excel
+                                </button>
+                                <button
+                                    class="px-6 py-3 bg-gradient-to-r from-red-500 to-red-600 text-white rounded-lg hover:from-red-600 hover:to-red-700 transition font-semibold shadow-lg">
+                                    <i class="fas fa-file-pdf mr-2"></i>Export to PDF
+                                </button>
+                                <button
+                                    class="px-6 py-3 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-semibold">
+                                    <i class="fas fa-print mr-2"></i>Print Report
+                                </button>
+                                <button
+                                    class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-semibold">
+                                    <i class="fas fa-envelope mr-2"></i>Email Report
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -2472,10 +2988,6 @@
                                 class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-semibold">
                                 Download Latest Backup
                             </button>
-                            <button
-                                class="px-6 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition font-semibold">
-                                Restore from Backup
-                            </button>
                         </div>
                     </div>
                     <div class="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden">
@@ -2564,7 +3076,7 @@
                     finance: 'Finance & Financial Analytics',
                     suppliers: 'Supplier Management',
                     expenses: 'Expense Management',
-                    staff: 'Staff / Technician Management',
+                    staff: 'User / Technician Management',
                     reports: 'Reporting Module',
                     notifications: 'Notifications & Alerts',
                     roles: 'User Roles & Permissions',
